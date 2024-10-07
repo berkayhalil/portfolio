@@ -1,0 +1,221 @@
+@import 'iconStyles.css';
+
+#navbar{
+    position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   background-color: #5789a2;
+   margin: 0;
+   padding: 0;
+   list-style-type: none;
+   border-bottom: 1px solid black;
+   z-index: 1000;
+ }
+
+ html {
+  scroll-behavior: smooth;
+}
+ 
+ body{
+   margin: 0;
+   padding-top: 50px;
+ }
+ 
+ #navbar li{
+   float: right;
+   padding-right: 5px;
+ }
+ 
+ li a{
+   display: block;
+   color: white;
+   text-align: center;
+   padding: 20px 20px;
+   text-decoration: none;
+   font-size: 23px;
+   border-radius: 6px;
+ }
+ 
+ ul#navbar li a:hover{
+   background-color: #407088;
+   text-shadow: 1px 1px 14px white;
+ }
+ 
+ #hi{
+   position: static;
+   text-align: center;
+   font-family: Cursive;
+   font-size: 40px;
+   margin-bottom: -9px;
+   color: white;
+   animation: fadeInUp 1s ease-out forwards;
+ }
+ 
+ #web-dev{
+   position: static;
+   text-align: center;
+   font-size: 30px;
+   font-style: italic;
+   color: #5789a2;
+   margin-top: 13px;
+   animation: fadeInUp 1s ease-out forwards;
+ }
+ 
+ #welcome-section{
+   background-color: #222224;
+   height: 643px;
+   padding: 1px;
+ }
+ 
+ #sec1-div1{
+   padding-top: 250px;
+ }
+ 
+ 
+ #projects-h1{
+   text-align: center;
+   font-family: Arial, Helvetica, sans-serif;
+   margin-top: 60px;
+   font-size: 35px;
+   text-decoration: underline; 
+   text-underline-offset: 8px;
+   color: white;
+ }
+ 
+ #projects{
+   background-color: #5789a2;
+   padding: 1px;
+   min-height: 623px;
+ }
+ 
+ .main-div{
+   display: flex; 
+   flex-wrap: wrap;
+   gap: 50px;
+   justify-content: center;
+   margin: 40px;
+   row-gap: 25px;
+ }
+ 
+ .project-tile{
+   text-align: center;
+   background-color: #155263;
+   margin-top: 0;
+   margin-bottom: -1px;
+   margin-top: -4px;
+   padding: 15px;
+   font-size: 20px;
+ }
+
+ @keyframes fadeInUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+ 
+ .projects-a{
+   text-decoration: none;
+   color: white;
+   display: inline-block;
+   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); 
+   transition: box-shadow 0.3s ease-in-out;
+   
+ }
+ 
+ .hidden-text{
+   margin-left: 8px;
+   margin-right: 8px;
+   color: #ff5959;
+ }
+ 
+ .project-tile .hidden-text {
+   opacity: 0;
+   font-family: system-ui;
+   transition: opacity 0.3s ease-in-out, visibility 0.5s ease-in-out;
+ }
+ 
+ .projects-a:hover .hidden-text {
+   visibility: visible;
+   opacity: 1;
+ }
+ 
+ .projects-a:hover {
+   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); 
+ }
+ 
+ .break {
+   flex-basis: 100%;
+   height: 0;
+ }
+ 
+ #last-section{
+   background-color: #222224;
+   height: auto;
+   padding: 1px;
+   width:auto;
+ }
+ 
+ #lets-h1{
+   position: static;
+   text-align: center;
+   font-family: Cursive;
+   font-size: 50px;
+   margin-bottom: -9px;
+   color: white;
+ }
+ 
+ #possible-h3{
+   position: static;
+   text-align: center;
+   font-size: 25px;
+   font-family: Monospace, Courier New;
+   color: #5789a2;
+   margin-top: 13px;
+   margin-bottom: 140px;
+ }
+ 
+ #sec3-div1{
+   padding-top: 200px;
+ }
+ 
+ #sec3-div2{
+   text-align: center;
+ }
+ 
+ #sec3-div2 > a{
+   font-size: 30px;
+   padding: 30px;
+   text-decoration: none;
+   color: white;
+ }
+ 
+ #sec3-div2 a {
+   position: relative;
+   top: 0;
+   transition: top ease 0.5s;
+ }
+ 
+ #sec3-div2 a:hover {
+   top: -10px;
+ }
+ 
+ hr{
+   border: 2px solid #5789a2;
+   margin-top: 25px;
+   margin-bottom: 35px;
+ }
+ 
+ @media screen and (max-width: 600px) {
+   #navbar li {
+     float: none;
+     width: 100%;
+   }
+ }
+ 
+ 

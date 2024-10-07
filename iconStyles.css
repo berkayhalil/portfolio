@@ -1,0 +1,180 @@
+ul#social-media-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+ul#social-media-list li.social-item {
+  list-style: none;
+}
+
+ul#social-media-list li.social-item a {
+  display: block;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 40px;
+  text-align: center;
+  text-decoration: none;
+  color:  #fff;  /*#404040;*/
+  margin: 0 30px;
+  transition: .5s;
+}
+
+ul#social-media-list li.social-item a span {
+  position: absolute;
+  transition: transform .5s;
+}
+
+ul#social-media-list li.social-item a span:nth-child(1),
+ul#social-media-list li.social-item a span:nth-child(3) {
+  width: 100%;
+  height: 3px;
+  background: #fff;  /*#404040;*/
+}
+
+ul#social-media-list li.social-item a span:nth-child(1) {
+  top: 0;
+  left: 0;
+  transform-origin: right;
+}
+
+ul#social-media-list li.social-item a:hover span:nth-child(1) {
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .5s;
+}
+
+ul#social-media-list li.social-item a span:nth-child(3) {
+  bottom: 0;
+  left: 0;
+  transform-origin: left;
+}
+
+ul#social-media-list li.social-item a:hover span:nth-child(3) {
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform .5s;
+}
+
+ul#social-media-list li.social-item a span:nth-child(2),
+ul#social-media-list li.social-item a span:nth-child(4) {
+  width: 3px;
+  height: 100%;
+  background: #404040;
+}
+
+ul#social-media-list li.social-item a span:nth-child(2) {
+  top: 0;
+  left: 0;
+  transform: scale(0);
+  transform-origin: bottom;
+}
+
+ul#social-media-list li.social-item a:hover span:nth-child(2) {
+  transform: scale(1);
+  transform-origin: top;
+  transition: transform .5s;
+}
+
+ul#social-media-list li.social-item a span:nth-child(4) {
+  top: 0;
+  right: 0;
+  transform: scale(0);
+  transform-origin: top;
+}
+
+ul#social-media-list li.social-item a:hover span:nth-child(4) {
+  transform: scale(1);
+  transform-origin: bottom;
+  transition: transform .5s;
+}
+
+ul#social-media-list li.social-item a.facebook:hover {
+  color: #fff; 
+  background: linear-gradient(45deg, #3b5998, #8b9dc3, #3b5998); 
+  -webkit-background-clip: text;
+  background-clip: text; 
+  color: transparent; 
+}
+
+ul#social-media-list li.social-item a.facebook:hover span {
+  background: linear-gradient(45deg, #3b5998, #8b9dc3, #3b5998); 
+}
+
+
+ul#social-media-list li.social-item a.instagram:hover {
+  color: #fff; 
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); 
+  -webkit-background-clip: text;
+  background-clip: text; 
+  color: transparent; 
+}
+
+ul#social-media-list li.social-item a.instagram:hover span {
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); 
+}
+
+
+ul#social-media-list li.social-item a.gmail:hover {
+  color: #fff; 
+  background: linear-gradient(45deg, 
+    #ea4335 20%, 
+    #fbbc05 40%, 
+    #34a853 60%, 
+    #4285f4 80%  
+  ); 
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; /
+}
+
+ul#social-media-list li.social-item a.gmail:hover span {
+  background: linear-gradient(45deg, 
+    #ea4335 20%, 
+    #fbbc05 40%, 
+    #34a853 60%, 
+    #4285f4 80%  
+  ); 
+}
+
+
+@keyframes ring {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(-5deg); }
+  50% { transform: rotate(5deg); }
+  75% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+
+ul#social-media-list li.social-item a.phone:hover {
+  color: #fff; 
+  background: linear-gradient(45deg, #34A853, #2C6B50); 
+  -webkit-background-clip: text;
+  background-clip: text; 
+  color: transparent; 
+}
+
+ul#social-media-list li.social-item a.phone:hover span {
+  background: linear-gradient(45deg, #34A853, #2C6B50); 
+}
+
+
+ul#social-media-list li.social-item a.phone:hover i {
+  background: linear-gradient(45deg, #34A853, #2C6B50); 
+  -webkit-background-clip: text; 
+  background-clip: text;
+  color: transparent; 
+  animation: ring 0.5s ease infinite; 
+}
+
+
+
+
+
+
